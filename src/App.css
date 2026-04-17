@@ -1,0 +1,161 @@
+/* CONTAINER */
+.card {
+  width: 400px;
+  padding: 28px;
+  border-radius: 16px;
+  background: inherit;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 34px;
+  gap: 18px; /* 🔥 consistent spacing */
+}
+
+.app.dark {
+  background: #0f172ab5;
+  color: #e5e7ebb5;
+}
+
+.app.dark h1 {
+  color: #d7d7d7;
+}
+
+/* INPUT WRAPPER */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 42px 12px 12px; /* space for counter */
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: transparent;
+  color: inherit;
+  outline: none;
+  transition: 0.2s;
+  width: 86%;
+}
+
+.input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.input.error {
+  border-color: #ef4444;
+}
+
+/* COUNTER INSIDE INPUT */
+.input-meta {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* ERROR BOX */
+.error-box {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1 auto;
+}
+
+.container button {
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #6366f1;
+  color: white;
+  transition: 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* OUTPUT */
+.output-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: #e5e7eb;
+}
+
+.app.dark .output-box {
+  background: #1e293b;
+}
+
+/* SECTION TITLE */
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+/* BIT UI SPACING */
+.bit-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+/* STEPS */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.step {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.step.active {
+  background: #6366f1;
+  color: white;
+  opacity: 1;
+}
+
+.mode {
+  font-size: 1.25rem;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  transition: 0.2s;
+}
+
+.mode:hover {
+  background: lightgray;
+}
+
+.app.dark .mode {
+  color: black;
+}
