@@ -108,17 +108,17 @@ npm run lint
 ## Component Overview
 
 ### Bin2Dec Component
-![Bin2Dec Component - Placeholder](./screenshots/Bin2Dec%20-%20Pro.png)
+![Bin2Dec Component - Placeholder](screenshots/Bin2Dec%20-%20Pro.png)
 
 **Functionality:** The main converter component that manages the application state and orchestrates the conversion logic. Displays the current binary input and decimal output.
 
 ### BitToggle Component
-![BitToggle Component - Placeholder](./screenshots/BitToggle.png)
+![BitToggle Component - Placeholder](screenshots/BitToggle.png)
 
 **Functionality:** Individual bit toggle buttons representing each bit position in the binary number. Users can click these buttons to toggle between 0 and 1, and the conversion updates automatically.
 
 ### StepBreakdown Component
-![StepBreakdown Component - Placeholder](./screenshots/demo.gif)
+![StepBreakdown Component - Placeholder](screenshots/demo.gif)
 
 **Functionality:** Displays a detailed mathematical breakdown of the conversion process, showing how each bit position (2^n) and its value contribute to the final decimal result.
 
